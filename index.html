@@ -1,0 +1,756 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="x-apple-disable-message-reformatting">
+
+    <style type="text/css">
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        table td, tr, thead, tbody {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-table-td {
+            width: 100%!important;
+            max-width: 1024px;
+        }
+
+
+        /*@media screen {*/
+        /*    .full-table {*/
+        /*       display: none !important;*/
+        /*    }*/
+
+        /*    .small-table {*/
+        /*        display: table-row !important;*/
+        /*    }*/
+
+        /*    .links-column {*/
+        /*        display: table-row !important;*/
+        /*    }*/
+
+        /*    .links-row {*/
+        /*        display: none!important;*/
+        /*    }*/
+        /*}*/
+
+
+        @media (max-width: 768px) {
+
+            .full-table {
+                display: none !important;
+            }
+
+            .small-table {
+                display: table-row !important;
+            }
+
+            body {
+                width: 768px !important;
+            }
+
+            .main-table-td {
+                width: 768px !important;
+                max-width: 768px !important;
+            }
+
+            .desc {
+                font-size: 15px !important;
+                line-height: 17px !important;
+            }
+
+            .arhimed-desc {
+                font-size: 15px !important;
+                line-height: 17px !important;
+            }
+
+
+            .img {
+                max-width: 600px !important;
+            }
+
+            .vebinar-desc {
+                font-size: 15px !important;
+                line-height: 17px !important;
+            }
+
+            .button {
+                font-size: 15px !important;
+            }
+
+            .title-vebinar {
+                font-size: 19px !important;
+            }
+
+            .links-row {
+                display: none !important;
+            }
+
+            .links-column {
+                display: table-row !important;
+            }
+
+        }
+
+        @media (max-width: 425px) {
+
+            .full-table {
+                display: none !important;
+            }
+
+            .small-table {
+                display: table-row !important;
+            }
+
+            body {
+                width: 425px !important;
+            }
+
+            .main-table-td {
+                width: 425px !important;
+                max-width: 425px !important;
+            }
+
+            .logo {
+                width: 160px !important;
+            }
+
+            .phone {
+                font-size: 15px !important;
+            }
+
+            .title-cost-up {
+                font-size: 22px !important;
+            }
+
+            .desc {
+                font-size: 15px !important;
+            }
+
+            .video-cost-up {
+                max-width: 400px !important; !important
+            }
+
+            .title-arhi {
+                font-size: 22px !important;
+            }
+
+            .arhimed-desc {
+                font-size: 15px !important;
+            }
+
+            .video-arhi {
+                max-width: 400px !important;
+            }
+
+            .title-vebinar {
+                font-size: 18px !important;
+            }
+
+            .vebinar-desc {
+                font-size: 14px !important;
+                line-height: 15px !important;
+            }
+
+            .button {
+                font-size: 13px !important;
+            }
+
+            .img {
+                max-width: 400px !important;
+            }
+
+            .links-row {
+                display: none !important;
+            }
+
+            .links-column {
+                display: table-row !important;
+            }
+
+        }
+
+
+        @media (max-width: 375px) {
+
+
+            .full-table {
+                display: none !important;
+            }
+
+            .small-table {
+                display: table-row !important;
+            }
+
+            body {
+                width: 375px !important;
+            }
+
+            .logo {
+                width: 130px !important;
+            }
+
+            .phone {
+                font-size: 14px !important;
+            }
+
+            .title-cost-up {
+                font-size: 24px !important;
+                line-height: 27px !important;
+            }
+
+            .desc {
+                font-size: 18px !important;
+                line-height: 20px !important;
+            }
+
+            .video-cost-up {
+                max-width: 300px !important;
+            }
+
+            .title-arhi {
+                font-size: 24px !important;
+                line-height: 27px !important;
+            }
+
+            .arhimed-desc {
+                font-size: 18px !important;
+                line-height: 20px !important;
+            }
+
+            .video-arhi {
+                max-width: 300px !important;
+            }
+
+            .title-vebinar {
+                font-size: 20px !important;
+                line-height: 22px !important;
+            }
+
+            .vebinar-desc {
+                font-size: 15px !important;
+                line-height: 17px !important;
+            }
+
+            .links-row {
+                display: none !important;
+            }
+
+            .links-column {
+                display: table-row !important;
+            }
+        }
+
+        @media (max-width: 320px) {
+
+
+            .full-table {
+                display: none !important;
+            }
+
+            .small-table {
+                display: table-row !important;
+            }
+
+            body {
+                width: 320px !important;
+            }
+
+            .logo {
+                width: 130px !important;
+            }
+
+            .phone {
+                font-size: 14px !important;
+            }
+
+            .title-cost-up {
+                font-size: 24px !important;
+                line-height: 27px !important;
+            }
+
+            .desc {
+                font-size: 18px !important;
+                line-height: 20px !important;
+            }
+
+            .video-cost-up {
+                max-width: 300px !important;
+            }
+
+            .title-arhi {
+                font-size: 24px !important;
+                line-height: 27px !important;
+            }
+
+            .arhimed-desc {
+                font-size: 18px !important;
+                line-height: 20px !important;
+            }
+
+            .video-arhi {
+                max-width: 300px !important;
+            }
+
+            .title-vebinar {
+                font-size: 20px !important;
+                line-height: 22px !important;
+            }
+
+            .vebinar-desc {
+                font-size: 15px !important;
+                line-height: 21px !important;
+            }
+
+            .button {
+                font-size: 13px !important;
+            }
+
+            .links-row {
+                display: none !important;
+            }
+
+            .links-column {
+                display: table-row !important;
+            }
+        }
+
+    </style>
+
+</head>
+<body style="margin: 0; border: 0;">
+<table class="main-table-td" align="center" style="border: 0; border-spacing: 0; border-collapse: collapse;" cellspacing="0" cellpadding="0">
+    <tr style="width: 100%;">
+        <td></td>
+        <td>
+            <table style="width: 100%; border: 0; border-spacing: 0; border-collapse: collapse;" cellspacing="0" cellpadding="0">
+                <tr style="background: #ffffff;">
+                    <td style="padding: 1%;">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td  align="left">
+                                    <a href="https://fluid-line.ru/">
+                                        <img class="logo" src="https://fluid-line.ru/assets/mailing/dispatch/fluid-line_1.png">
+                                    </a>
+                                </td>
+                                <td align="right" style="padding: 1em;">
+                                    <a class="phone" href="tel:+74959844100" style="text-decoration: none; color: black; font-size: 14px; font-family: 'Verdana'; font-style: normal;">+7 (495) 984-41-00</a>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                    </td>
+
+                </tr>
+                <tr style="background: #ffffff;">
+                    <td>
+                        <table style="width: 100%; border: 0; border-spacing: 0; border-collapse: collapse" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        <img class="banner-img" src="https://fluid-line.ru/assets/mailing/dispatch/down_and_up_1024.png" alt="banner" style="height: auto; width: 100%;">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table style="width: 100%; border: 0; border-spacing: 0; border-collapse: collapse" cellspacing="0" cellpadding="0">
+                            <tr style="background: #1477A7;">
+                                <td>
+                                    <h3 class="title-cost-up" style="text-align: center; margin: 0; padding: 10px; color: #FFFFFF; font-size: 20px; line-height: 24px; font-family: 'Verdana'; font-weight: 700">Повышение цен</h3>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table style="width: 100%; border: 0; border-spacing: 0; border-collapse: collapse; background: #4F4F4F;" cellspacing="0" cellpadding="0">
+                            <tr style="">
+                                <td align="center">
+                                    <p class="desc" style="text-align: left; width: 80%; margin: 0; color: #FFFFFF; font-family: 'Verdana'; font-weight: 400; font-size: 13px; line-height: 16px; padding-top: 20px;">
+                                        В конце марта мы анонсировали повышение цен на продукцию Hy-Lok и все это время максимально оттягивали дату повышения, чтобы поддержать ваш бизнес в это непростое время. Мы более 12 лет держали цены на одном уровне и сегодня, к сожалению, вынуждены их повысить.
+
+
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="padding-top: 1em;">
+                                    <p class="desc" style="text-align: left; width: 80%; margin: 0; color: #FFFFFF; font-family: 'Verdana'; font-weight: 400; font-size: 13px; line-height: 16px; padding-top: 20px;">
+                                        До 15 июня включительно у вас есть возможность сделать заказ и приобрести товар по старым ценам. Поспешите!<br /><br />
+
+                                        Все подробности в нашем <a style="text-decoration: none; color: #ffffff" href="http://www.fluid-line.ru/?refferals=1&utm_mgash={{email}}&youtube_desktop=bj4_FlbiFsA&youtube_mobile=bj4_FlbiFsA&video_mobile=1&video_desktop=1&utm_subject=priceup&utm_source=own&type=mailganer&from=fl3">видео:</a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr style="background: #4F4F4F;">
+                                <td align="center">
+                                    <a href="http://www.fluid-line.ru/?refferals=1&utm_mgash={{email}}&youtube_desktop=bj4_FlbiFsA&youtube_mobile=bj4_FlbiFsA&video_mobile=1&video_desktop=1&utm_subject=priceup&utm_source=own&type=mailganer&from=fl3">
+                                        <img class="video-cost-up" src="https://fluid-line.ru/newsletter/GIFS-1/new-newsletter/price-how.gif" alt="video" style="height: auto; min-width: 280px; max-width: 500px; width: 80%; margin: 0; padding-top: 20px; padding-bottom: 20px">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr style="background: #FFFFFF">
+                    <td>
+                        <table style="width: 100%; border: 0; border-spacing: 0; border-collapse: collapse" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <h3 class="title-arhi" style="text-align: center; margin: 0; padding-top: 30px; padding-bottom: 10px; color: #1477A7; font-size: 20px; line-height: 24px; font-family: 'Verdana'; font-weight: 700">В гостях у компании Архимед</h3>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr  style="background: #FFFFFF">
+                    <td>
+                        <p class="arhimed-desc" style="width: 80%; margin: 0 auto; color: #000000; font-family: 'Verdana'; font-weight: 400; font-size: 13px; line-height: 16px; padding-top: 10px; padding-bottom: 0">
+                            Мы посетили наших партнеров - компанию Архимед и увидели как работают только что собранные пневмоприводы для запорной арматуры больших диаметров. Данное оборудование в настоящий момент уже отгружено заказчику и устанавливается на объекты нефтегазовой отрасли.
+                            <br />Как всегда всё самое интересное в нашем <a href="http://www.fluid-line.ru/?refferals=1&utm_mgash={{email}}&youtube_desktop=bj4_FlbiFsA&youtube_mobile=bj4_FlbiFsA&video_mobile=1&video_desktop=1&utm_subject=priceup&utm_source=own&type=mailganer&from=fl3" style="text-decoration: none; color: #000000"></a> видео
+                        </p>
+                    </td>
+                </tr>
+                <tr style="background: #ffffff;">
+                    <td align="center">
+                        <a href="http://www.fluid-line.ru/?refferals=1&utm_mgash={{email}}&youtube_desktop=bj4_FlbiFsA&youtube_mobile=bj4_FlbiFsA&video_mobile=1&video_desktop=1&utm_subject=priceup&utm_source=own&type=mailganer&from=fl3">
+                            <img class="video-arhi" src="https://fluid-line.ru/newsletter/GIFS-1/new-newsletter/arhime.jpg" alt="video" style="height: auto; min-width: 280px; max-width: 500px; width: 80%; margin: 0 ;  padding-top: 20px; padding-bottom: 20px">
+                        </a>
+                    </td>
+                </tr>
+                <tr style="background: #1477A7">
+                    <td>
+                        <table style="width: 100%; border: 0; border-spacing: 0; border-collapse: collapse" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td style="text-align: center">
+                                    <h3 class="title-vebinar" style="font-family: 'Verdana';font-weight: 400;font-size: 15px;line-height: 18px;color: #FFFFFF; padding: 10px; margin: 0">
+                                        Другие предстоящие мероприятия
+                                    </h3>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr style="background: #FFFFFF">
+                    <td>
+                        <table style="width: 100%; border: 0; border-spacing: 0; border-collapse: collapse" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td align="center">
+                                    <h4 class="title-vebinar" style="width: 80%; margin: 0;color: #1477A7; font-size: 16px; font-weight: 400; font-family: 'Verdana'; line-height: 20px; padding: 10px;">Мастер класс в программе Компас</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <p class="vebinar-desc" style="width: 80%; margin: 0; font-size: 12px; font-weight: 400; font-family: 'Verdana'; line-height: 15px">Загрузка спецификации из компаса 3D в 1C,</p>
+                                    <p class="vebinar-desc" style="width: 80%; margin: 0; font-size: 12px; font-weight: 400; font-family: 'Verdana'; line-height: 15px">Продолжительность - 2 часа:</p>
+                                    <p class="vebinar-desc" style="width: 80%; margin: 0;padding-top: 10px; padding-bottom: 15px; font-size: 12px; font-weight: 400; font-family: 'Verdana'; line-height: 15px">3 июня 2022 г. 20:00 (МСК)</p>
+                                </td>
+                            </tr>
+                            <tr style="background: #FFFFFF">
+                                <td style="text-align: center">
+                                    <span style="background: #1477A7; color: #FFFFFF; border-radius: 15px; font-family: 'Verdana'; font-style: normal; font-weight: 400; font-size: 12px; line-height: 15px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; margin: 0;">
+                                        <a class="button" href="https://fluid-line.ru/kompas_3d_registration?refferals=1&utm_mgash={{email}}&utm_subject=priceup&utm_source=own&type=mailganer&from=fl3" style="text-decoration: none; color: #FFFFFF">Участвовать</a>
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+                <tr style="background: #FFFFFF">
+                    <td>
+                        <table style="width: 100%; border: 0; border-spacing: 0; border-collapse: collapse" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td style="text-align: center">
+                                    <h4 class="title-vebinar" style="color: #1477A7; font-size: 16px; font-weight: 400; font-family: 'Verdana'; line-height: 20px; padding: 20px; margin: 0">Бесплатные обучающие вебинары:</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <p class="vebinar-desc" style="width: 80%; margin: 0; color: #000000; font-family: 'Verdana'; font-weight: 400; font-size: 12px; line-height: 15px;"> Не пропускайте интересные вебинары по нашей продукции.</p>
+                                    <p class="vebinar-desc" style="width: 80%; margin: 0; color: #000000; font-family: 'Verdana'; font-weight: 400; font-size: 12px; line-height: 15px;">
+                                        <a style="color: #1477A7; text-decoration: none" href="https://fluid-line.ru/7709353?refferals=1&utm_mgash={{email}}&utm_subject=priceup&utm_source=own&type=mailganer&from=fl3">
+                                            8 июня 2022 г. 11:00 (МСК)
+                                        </a>
+                                    </p>
+                                    <p class="vebinar-desc" style="width: 80%; margin: 0; color: #000000; font-family: 'Verdana'; font-weight: 400; font-size: 12px; line-height: 15px; ">Альтернативные стандарты фитингов</p>
+                                    <p class="vebinar-desc" style="width: 80%; margin: 0; color: #000000; font-family: 'Verdana'; font-weight: 400; font-size: 12px; line-height: 15px; ">
+                                        <a style="color: #1477A7; text-decoration: none" href="#">
+                                            15 июня 2022 г. 11:00 (МСК)
+                                        </a>
+                                    </p>
+                                    <p class="vebinar-desc" style="width: 80%; margin: 0; color: #000000; font-family: 'Verdana'; font-weight: 400; font-size: 12px; line-height: 15px;">Стандарты резьб</p>
+                                    <p class="vebinar-desc" style="width: 80%; margin: 0; color: #000000; font-family: 'Verdana'; font-weight: 400; font-size: 12px; line-height: 15px;">
+                                        <a style="color: #1477A7; text-decoration: none" href="https://fluid-line.ru/7709355?refferals=1&utm_mgash={{email}}&utm_subject=priceup&utm_source=own&type=mailganer&from=fl3">
+                                            22 июня 2022 г. 11:00 (МСК)
+                                        </a>
+                                    </p>
+                                    <p class="vebinar-desc" style="width: 80%; margin: 0; color: #000000; font-family: 'Verdana'; font-weight: 400; font-size: 12px; line-height: 15px;">NEW! Электрические сигналы датчиков простым языком</p>
+                                    <p class="vebinar-desc" style="width: 80%; margin: 0; color: #000000; font-family: 'Verdana'; font-weight: 400; font-size: 12px; line-height: 15px;">
+                                        <a style="color: #1477A7; text-decoration: none" href="https://fluid-line.ru/7709356?refferals=1&utm_mgash={{email}}&utm_subject=priceup&utm_source=own&type=mailganer&from=fl3">
+                                            29 июня 2022 г. 11:00 (МСК)
+                                        </a>
+                                    </p>
+                                    <p class="vebinar-desc" style="width: 80%; margin: 0; color: #000000; font-family: 'Verdana'; font-weight: 400; font-size: 12px; line-height: 15px;">Фильтры. Микронные фильтры Hy-Lok, A-Flow, ClassicFilters</p>
+                                    <p class="vebinar-desc" style="width: 80%; margin: 0; color: #000000; font-family: 'Verdana'; font-weight: 400; font-size: 12px; line-height: 15px; padding-bottom: 15px;">
+                                        <a style="color: #1477A7; text-decoration: none" href="https://fluid-line.ru/7709357?refferals=1&utm_mgash={{email}}&utm_subject=priceup&utm_source=own&type=mailganer&from=fl3">
+                                            Или зарегистрируйтесь на все вебинары сразу
+                                        </a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table style="width: 100%; border: 0; border-spacing: 0; border-collapse: collapse" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td style="text-align: right; width: 50%">
+                                    <span style="font-family: 'Verdana';font-style: normal;font-weight: 400;font-size: 12px;line-height: 15px; background: #1477A7;
+border-radius: 15px; margin: 0; margin-top: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 14px; padding-right: 15px">
+                                        <a class="button" style="color: #ffffff; text-decoration: none" href="#">Зарегистрироваться</a>
+                                    </span>
+                                            </td>
+                                            <td style="text-align: left; width: 50%">
+                                    <span style="font-family: 'Verdana';font-style: normal;font-weight: 400;font-size: 12px;line-height: 15px; background: #1477A7;
+border-radius: 15px; margin: 0; margin-left: 30px; padding-top: 10px; padding-bottom: 10px; padding-left: 14px; padding-right: 15px">
+                                        <a class="button" style="color: #ffffff; text-decoration: none" href="#">Все вебинары</a>
+                                    </span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr style="background: #FFFFFF">
+                    <td>
+                        <table style="width: 100%; border: 0; border-spacing: 0; border-collapse: collapse" cellspacing="0" cellpadding="0">
+                            <tr style="text-align: center">
+                                <td style="text-align: center">
+                                    <h4 style="font-family: 'Verdana'; font-style: normal; font-weight: 700; font-size: 17px; line-height: 21px; color: #1477A7; margin: 0; padding-top: 30px; padding-bottom: 10px">Мы ждем Вас на следующих выставках:</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center">
+                                    <a href="#">
+                                        <img class="img" src="https://fluid-line.ru/assets/mailing/dispatch/ekb.png" alt="Екатеринбург" style="height: auto; min-width: 280px; max-width: 400px; width: 90%; padding-top: 10px; padding-bottom: 5px;">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center">
+                                    <a href="#">
+                                        <img class="img" src="https://fluid-line.ru/assets/mailing/dispatch/piter.png" alt="Санкт-Петербург" style="height: auto; min-width: 280px; max-width: 400px; width: 90%; padding-top: 5px; padding-bottom: 5px;">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center">
+                                    <a href="#">
+                                        <img class="img" src="https://fluid-line.ru/assets/mailing/dispatch/samara.png" alt="Самара" style="height: auto; min-width: 280px; max-width: 400px; width: 90%; padding-top: 5px; padding-bottom: 20px;">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="links-row" style="background: #373636;">
+                    <td class="nav-root" style="padding-top: 2em;">
+                        <table cellpadding="0" cellspacing="0" style="width: 100%; border: 0; border-spacing: 0;  padding-bottom: 1em;">
+                            <tr>
+                                <td style="text-align: center;">
+                                    <a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana'; text-decoration: none;">Новости</a>
+                                </td>
+                                <td style="text-align: center;">
+                                    <a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana'; text-decoration: none;">Продукция</a>
+                                </td>
+                                <td style="text-align: center;">
+                                    <a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana'; text-decoration: none;">О компании</a>
+                                </td>
+                                <td style="text-align: center;">
+                                    <a href="https://fluid-line.ru/" class="nav-item" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana'; text-decoration: none;">Сертификаты</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="links-column" style="display: none; background: #373636; width: 90%">
+                    <td style="padding-top: 2em; width: 90%; margin: 0 auto">
+                        <table cellpadding="0" cellspacing="0" style="width: 90%; border: 0; border-spacing: 0;  padding-bottom: 1em; margin: 0 auto">
+                            <tr>
+                                <td style="text-align: left; padding-top: 5px; padding-bottom: 5px">
+                                    <a href="https://fluid-line.ru/" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana'; text-decoration: none;">Новости</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left; padding-top: 5px; padding-bottom: 5px">
+                                    <a href="https://fluid-line.ru/" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Продукция</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left; padding-top: 5px; padding-bottom: 5px">
+                                    <a href="https://fluid-line.ru/" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">О компании</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left; padding-top: 5px; padding-bottom: 5px">
+                                    <a href="https://fluid-line.ru/" style="font-style: normal; font-weight: 700; font-size: 12px; line-height: 21px; color: #FFFFFF; font-family: 'Verdana';color: white; text-decoration: none;">Сертификаты</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="full-table" style="background: #373636;">
+                    <td>
+                        <table align="center" cellpadding="0" cellspacing="0" style="width: 100%; padding: 2em; padding-left: 1em; padding-right: 1em; text-align: left; border: 0; border-spacing: 0;">
+                            <tr style=" width: 100%;" align="center">
+                                <td style="display: inline-block; padding-right: 8em;" >
+                                    <table align="left" cellpadding="0" cellspacing="0" style="width: 100%; border: 0; border-spacing: 0; padding-bottom: 1em;">
+                                        <tr>
+                                            <td align="right" style="padding-right: 1em;">
+                                                <a style=" color: white; text-decoration: none;" href="tel:+74959844100">
+                                                    <img style="width: 1.5em;" src="https://fluid-line.ru/assets/mailing/vebinar/vector_call.png">
+                                                </a>
+                                            </td>
+                                            <td align="left">
+                                                <a style="font-size: 13px; font-family: 'Verdana'; color: white; text-decoration: none;" href="tel:+74959844100">
+                                                    +7 (495) 984-41-00
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="display: inline-block; padding-right: 8em;">
+                                    <table align="left" cellpadding="0" cellspacing="0" style="width: 100%; border: 0px; border-spacing: 0px; padding-bottom: 1em;">
+                                        <tr>
+                                            <td align="right" style="padding-right: 1em; ">
+                                                <a style="color: white; text-decoration: none;" href="mailto:mail@fluid-line.ru">
+                                                    <img style="width: 1.5em;" src="https://fluid-line.ru/assets/mailing/vebinar/vector_mail.png">
+                                                </a>
+                                            </td>
+                                            <td align="left">
+                                                <a style="font-size: 13px;   font-family: 'Verdana'; color: white; text-decoration: none;" href="mailto:mail@fluid-line.ru">
+                                                    mail@fluid-line.ru
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="display: inline-block;">
+                                    <table cellpadding="0" cellspacing="0" style="width: 100%; border: 0; border-spacing: 0; padding-bottom: 1em;">
+                                        <tr>
+                                            <td align="right" style="padding-right: 1em;">
+                                                <a style=" color: white; text-decoration: none;" href="https://fluid-line.ru/">
+                                                    <img  style="width: 1.5em;" src="https://fluid-line.ru/assets/mailing/vebinar/vector_point.png">
+                                                </a>
+                                            </td>
+                                            <td align="left" style="">
+                                                <a style="font-size: 13px; font-family: 'Verdana'; color: white; text-decoration: none;"   href="https://fluid-line.ru/">
+                                                    Москва, ул.Большая Cеменовская, д.49
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="small-table" style="display: none; background: #373636;">
+                    <td style="margin:0;padding:0; width: 100%; padding-top: 20px">
+                        <table align="center" cellpadding="0" cellspacing="0" style="border: 0; border-collapse: collapse; width: 90%;">
+                            <tr style="width: 100%;">
+                                <td>
+                                    <table align="left" cellpadding="0" cellspacing="0" style="width: 100%; border: 0; border-spacing: 0; padding-bottom: 2em;">
+                                        <tr style="vertical-align: middle">
+                                            <td align="left" style="width: 1.5em; padding-right: 5px;">
+                                                <a style="color: white; text-decoration: none;" href="tel:+74959844100">
+                                                    <img src="https://fluid-line.ru/assets/mailing/vebinar/vector_call.png">
+                                                </a>
+                                            </td>
+                                            <td align="left">
+                                                <a style=" font-size: 13px; font-family: 'Verdana'; color: white; text-decoration: none;" href="tel:+74959844100">
+                                                    +7 (495) 984-41-00
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table align="left" cellpadding="0" cellspacing="0" style="width: 100%; border: 0; border-spacing: 0; padding-bottom: 2em;">
+                                        <tr style="vertical-align: middle;">
+                                            <td align="left" style="width: 1.5em; padding-right: 5px;">
+                                                <a style="color: white; text-decoration: none;" href="mailto:mail@fluid-line.ru">
+                                                    <img src="https://fluid-line.ru/assets/mailing/vebinar/vector_mail.png">
+                                                </a>
+                                            </td>
+                                            <td align="left">
+                                                <a style="font-size: 13px; font-family: 'Verdana'; color: white; text-decoration: none;" href="mailto:mail@fluid-line.ru">
+                                                    mail@fluid-line.ru
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table  cellpadding="0" cellspacing="0" style="width: 100%; border: 0; border-spacing: 0; padding-bottom: 2em;">
+                                        <tr style="vertical-align: middle">
+                                            <td align="left" style="width: 1.5em; padding-right: 5px;">
+                                                <a style=" color: white; text-decoration: none;" href="https://fluid-line.ru/">
+                                                    <img src="https://fluid-line.ru/assets/mailing/vebinar/vector_point.png">
+                                                </a>
+                                            </td>
+                                            <td align="left">
+                                                <a style="font-size: 13px; font-family: 'Verdana'; color: white; text-decoration: none;" href="https://fluid-line.ru/">
+                                                    Москва, ул.Большая Cеменовская, д.49
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr style="background: #373636;">
+                    <td>
+                        <hr>
+                    </td>
+                </tr>
+                <tr style="background: #373636;">
+                    <td>
+                        <p class="footer-text" style="margin: 0; padding-left: 1em; padding-right: 1em; color: #888888; font-size: 12px; line-height: 12px; font-family: 'Verdana';">Вы получили это письмо, потому что подписаны на еженедельную рассылку Fluid-Line.</p>
+                    </td>
+                </tr>
+                <tr style="background: #373636; padding-left: 2%; padding-right: 2%;">
+                    <td>
+                        <a href="https://fluid-line.ru/" class="footer-text" style="margin: 0; padding-left: 1em; padding-right: 1em; color: #888888; font-size: 12px; line-height: 12px; font-family: 'Verdana'; text-decoration: none;">
+                            <img class="footer-img" style="width: 14px; color: #888888;  padding-right: 4px; " src="https://fluid-line.ru/assets/mailing/vebinar/unsub.png">Отписаться
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td></td>
+    </tr>
+</table>
+</body>
+</html>
